@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+    - name: action-maven
+      # You may pin to the exact commit or the version.
+      # uses: comchangs/action-maven@54db702e085ac767dad94c87e84499afb9d77162
+      uses: comchangs/action-maven@v0.4-beta
